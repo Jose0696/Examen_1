@@ -36,7 +36,7 @@ template<class tipo>
 void PilaLista<tipo>::pop() throw(class StackEmpty) {
     if(empty())
         throw StackEmpty("Top sobre un stack vacio");
-    return S->borrarInicio();
+    S->borrarInicio();
     n--;
 }
 
