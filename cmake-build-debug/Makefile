@@ -128,6 +128,78 @@ Examen_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/build
 .PHONY : Examen_1/fast
 
+Lista.obj: Lista.cpp.obj
+.PHONY : Lista.obj
+
+# target to build an object file
+Lista.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Lista.cpp.obj
+.PHONY : Lista.cpp.obj
+
+Lista.i: Lista.cpp.i
+.PHONY : Lista.i
+
+# target to preprocess a source file
+Lista.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Lista.cpp.i
+.PHONY : Lista.cpp.i
+
+Lista.s: Lista.cpp.s
+.PHONY : Lista.s
+
+# target to generate assembly for a file
+Lista.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Lista.cpp.s
+.PHONY : Lista.cpp.s
+
+Nodo.obj: Nodo.cpp.obj
+.PHONY : Nodo.obj
+
+# target to build an object file
+Nodo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Nodo.cpp.obj
+.PHONY : Nodo.cpp.obj
+
+Nodo.i: Nodo.cpp.i
+.PHONY : Nodo.i
+
+# target to preprocess a source file
+Nodo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Nodo.cpp.i
+.PHONY : Nodo.cpp.i
+
+Nodo.s: Nodo.cpp.s
+.PHONY : Nodo.s
+
+# target to generate assembly for a file
+Nodo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Nodo.cpp.s
+.PHONY : Nodo.cpp.s
+
+PilaLista.obj: PilaLista.cpp.obj
+.PHONY : PilaLista.obj
+
+# target to build an object file
+PilaLista.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/PilaLista.cpp.obj
+.PHONY : PilaLista.cpp.obj
+
+PilaLista.i: PilaLista.cpp.i
+.PHONY : PilaLista.i
+
+# target to preprocess a source file
+PilaLista.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/PilaLista.cpp.i
+.PHONY : PilaLista.cpp.i
+
+PilaLista.s: PilaLista.cpp.s
+.PHONY : PilaLista.s
+
+# target to generate assembly for a file
+PilaLista.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/PilaLista.cpp.s
+.PHONY : PilaLista.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Examen_1
+	@echo ... Lista.obj
+	@echo ... Lista.i
+	@echo ... Lista.s
+	@echo ... Nodo.obj
+	@echo ... Nodo.i
+	@echo ... Nodo.s
+	@echo ... PilaLista.obj
+	@echo ... PilaLista.i
+	@echo ... PilaLista.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

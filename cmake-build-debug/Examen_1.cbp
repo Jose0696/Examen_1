@@ -82,10 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/mmelr/Documents/GitHub/Examen_1/Lista.cpp">
+			<Option target="Examen_1"/>
+		</Unit>
 		<Unit filename="C:/Users/mmelr/Documents/GitHub/Examen_1/Lista.h">
 			<Option target="Examen_1"/>
 		</Unit>
+		<Unit filename="C:/Users/mmelr/Documents/GitHub/Examen_1/Nodo.cpp">
+			<Option target="Examen_1"/>
+		</Unit>
 		<Unit filename="C:/Users/mmelr/Documents/GitHub/Examen_1/Nodo.h">
+			<Option target="Examen_1"/>
+		</Unit>
+		<Unit filename="C:/Users/mmelr/Documents/GitHub/Examen_1/PilaLista.cpp">
 			<Option target="Examen_1"/>
 		</Unit>
 		<Unit filename="C:/Users/mmelr/Documents/GitHub/Examen_1/PilaLista.h">

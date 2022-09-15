@@ -82,19 +82,67 @@ CMakeFiles/Examen_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Examen_1.dir/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mmelr\Documents\GitHub\Examen_1\main.cpp -o CMakeFiles\Examen_1.dir\main.cpp.s
 
+CMakeFiles/Examen_1.dir/Lista.cpp.obj: CMakeFiles/Examen_1.dir/flags.make
+CMakeFiles/Examen_1.dir/Lista.cpp.obj: ../Lista.cpp
+CMakeFiles/Examen_1.dir/Lista.cpp.obj: CMakeFiles/Examen_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mmelr\Documents\GitHub\Examen_1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Examen_1.dir/Lista.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Examen_1.dir/Lista.cpp.obj -MF CMakeFiles\Examen_1.dir\Lista.cpp.obj.d -o CMakeFiles\Examen_1.dir\Lista.cpp.obj -c C:\Users\mmelr\Documents\GitHub\Examen_1\Lista.cpp
+
+CMakeFiles/Examen_1.dir/Lista.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Examen_1.dir/Lista.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mmelr\Documents\GitHub\Examen_1\Lista.cpp > CMakeFiles\Examen_1.dir\Lista.cpp.i
+
+CMakeFiles/Examen_1.dir/Lista.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Examen_1.dir/Lista.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mmelr\Documents\GitHub\Examen_1\Lista.cpp -o CMakeFiles\Examen_1.dir\Lista.cpp.s
+
+CMakeFiles/Examen_1.dir/Nodo.cpp.obj: CMakeFiles/Examen_1.dir/flags.make
+CMakeFiles/Examen_1.dir/Nodo.cpp.obj: ../Nodo.cpp
+CMakeFiles/Examen_1.dir/Nodo.cpp.obj: CMakeFiles/Examen_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mmelr\Documents\GitHub\Examen_1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Examen_1.dir/Nodo.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Examen_1.dir/Nodo.cpp.obj -MF CMakeFiles\Examen_1.dir\Nodo.cpp.obj.d -o CMakeFiles\Examen_1.dir\Nodo.cpp.obj -c C:\Users\mmelr\Documents\GitHub\Examen_1\Nodo.cpp
+
+CMakeFiles/Examen_1.dir/Nodo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Examen_1.dir/Nodo.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mmelr\Documents\GitHub\Examen_1\Nodo.cpp > CMakeFiles\Examen_1.dir\Nodo.cpp.i
+
+CMakeFiles/Examen_1.dir/Nodo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Examen_1.dir/Nodo.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mmelr\Documents\GitHub\Examen_1\Nodo.cpp -o CMakeFiles\Examen_1.dir\Nodo.cpp.s
+
+CMakeFiles/Examen_1.dir/PilaLista.cpp.obj: CMakeFiles/Examen_1.dir/flags.make
+CMakeFiles/Examen_1.dir/PilaLista.cpp.obj: ../PilaLista.cpp
+CMakeFiles/Examen_1.dir/PilaLista.cpp.obj: CMakeFiles/Examen_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mmelr\Documents\GitHub\Examen_1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Examen_1.dir/PilaLista.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Examen_1.dir/PilaLista.cpp.obj -MF CMakeFiles\Examen_1.dir\PilaLista.cpp.obj.d -o CMakeFiles\Examen_1.dir\PilaLista.cpp.obj -c C:\Users\mmelr\Documents\GitHub\Examen_1\PilaLista.cpp
+
+CMakeFiles/Examen_1.dir/PilaLista.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Examen_1.dir/PilaLista.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mmelr\Documents\GitHub\Examen_1\PilaLista.cpp > CMakeFiles\Examen_1.dir\PilaLista.cpp.i
+
+CMakeFiles/Examen_1.dir/PilaLista.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Examen_1.dir/PilaLista.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mmelr\Documents\GitHub\Examen_1\PilaLista.cpp -o CMakeFiles\Examen_1.dir\PilaLista.cpp.s
+
 # Object files for target Examen_1
 Examen_1_OBJECTS = \
-"CMakeFiles/Examen_1.dir/main.cpp.obj"
+"CMakeFiles/Examen_1.dir/main.cpp.obj" \
+"CMakeFiles/Examen_1.dir/Lista.cpp.obj" \
+"CMakeFiles/Examen_1.dir/Nodo.cpp.obj" \
+"CMakeFiles/Examen_1.dir/PilaLista.cpp.obj"
 
 # External object files for target Examen_1
 Examen_1_EXTERNAL_OBJECTS =
 
 Examen_1.exe: CMakeFiles/Examen_1.dir/main.cpp.obj
+Examen_1.exe: CMakeFiles/Examen_1.dir/Lista.cpp.obj
+Examen_1.exe: CMakeFiles/Examen_1.dir/Nodo.cpp.obj
+Examen_1.exe: CMakeFiles/Examen_1.dir/PilaLista.cpp.obj
 Examen_1.exe: CMakeFiles/Examen_1.dir/build.make
 Examen_1.exe: CMakeFiles/Examen_1.dir/linklibs.rsp
 Examen_1.exe: CMakeFiles/Examen_1.dir/objects1.rsp
 Examen_1.exe: CMakeFiles/Examen_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mmelr\Documents\GitHub\Examen_1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Examen_1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mmelr\Documents\GitHub\Examen_1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Examen_1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Examen_1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Examen_1.dir/Lista.cpp.obj"
+  "CMakeFiles/Examen_1.dir/Lista.cpp.obj.d"
+  "CMakeFiles/Examen_1.dir/Nodo.cpp.obj"
+  "CMakeFiles/Examen_1.dir/Nodo.cpp.obj.d"
+  "CMakeFiles/Examen_1.dir/PilaLista.cpp.obj"
+  "CMakeFiles/Examen_1.dir/PilaLista.cpp.obj.d"
   "CMakeFiles/Examen_1.dir/main.cpp.obj"
   "CMakeFiles/Examen_1.dir/main.cpp.obj.d"
   "Examen_1.exe"
