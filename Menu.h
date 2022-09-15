@@ -4,7 +4,8 @@
 
 #ifndef EXAMEN_1_MENU_H
 #define EXAMEN_1_MENU_H
-#include "Utils.h"
+#include "Hanoi.h"
+#include "PilaLista.h"
 
 class Menu {
 private:

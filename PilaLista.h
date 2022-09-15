@@ -6,7 +6,7 @@
 #define EXAMEN_1_PILALISTA_H
 
 #include "RuntimeException.h"
-#include "Lista.h"
+#include "Lista.cpp"
 
 template<class tipo>
 class PilaLista {

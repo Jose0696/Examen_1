@@ -6,7 +6,7 @@
 #define EXAMEN_1_LISTA_H
 
 
-#include "Nodo.h"
+#include "Nodo.cpp"
 
 template<class tipo>
 class Lista {

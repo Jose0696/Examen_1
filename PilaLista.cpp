@@ -4,8 +4,6 @@
 
 #include "PilaLista.h"
 
-
-
 template<class tipo>
 PilaLista<tipo>::PilaLista():S(new Lista<tipo>), n(0) {
 
