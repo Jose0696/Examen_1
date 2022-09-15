@@ -4,14 +4,24 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Jose/CLionProjects/Examen_1/Lista.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/Lista.cpp.obj"
+  "C:/Users/Jose/CLionProjects/Examen_1/Menu.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/Menu.cpp.obj"
+  "C:/Users/Jose/CLionProjects/Examen_1/Nodo.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/Nodo.cpp.obj"
+  "C:/Users/Jose/CLionProjects/Examen_1/PilaLista.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/PilaLista.cpp.obj"
+  "C:/Users/Jose/CLionProjects/Examen_1/main.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/main.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/mmelr/Documents/GitHub/Examen_1/Lista.cpp" "CMakeFiles/Examen_1.dir/Lista.cpp.obj" "gcc" "CMakeFiles/Examen_1.dir/Lista.cpp.obj.d"
-  "C:/Users/mmelr/Documents/GitHub/Examen_1/Nodo.cpp" "CMakeFiles/Examen_1.dir/Nodo.cpp.obj" "gcc" "CMakeFiles/Examen_1.dir/Nodo.cpp.obj.d"
-  "C:/Users/mmelr/Documents/GitHub/Examen_1/PilaLista.cpp" "CMakeFiles/Examen_1.dir/PilaLista.cpp.obj" "gcc" "CMakeFiles/Examen_1.dir/PilaLista.cpp.obj.d"
-  "C:/Users/mmelr/Documents/GitHub/Examen_1/main.cpp" "CMakeFiles/Examen_1.dir/main.cpp.obj" "gcc" "CMakeFiles/Examen_1.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.
