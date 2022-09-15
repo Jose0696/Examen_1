@@ -1,6 +1,9 @@
-#include <iostream>
+#include "Menu.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Menu* m = new Menu();
+    m->imprimeMenu();
+
+    delete m;
     return 0;
 }

@@ -10,7 +10,9 @@ class Menu {
 private:
 
 public:
-
+    Menu();
+    void imprimeMenu();
+    void mostrarMenu();
 };
 
 
