@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Jose/CLionProjects/Examen_1/Hanoi.cpp">
+			<Option target="Examen_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Jose/CLionProjects/Examen_1/Hanoi.h">
+			<Option target="Examen_1"/>
+		</Unit>
 		<Unit filename="C:/Users/Jose/CLionProjects/Examen_1/Lista.cpp">
 			<Option target="Examen_1"/>
 		</Unit>

@@ -1,9 +1,14 @@
 #include "Menu.h"
+#include "PilaLista.h"
+#include "Hanoi.h"
 
 int main() {
-    Menu* m = new Menu();
+    PilaLista<Hanoi> *pilaLista = new PilaLista<Hanoi>;
+
+
+/*    Menu* m = new Menu();
     m->imprimeMenu();
 
-    delete m;
+    delete m;*/
     return 0;
 }

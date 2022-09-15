@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Jose/CLionProjects/Examen_1/Hanoi.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/Hanoi.cpp.obj"
   "C:/Users/Jose/CLionProjects/Examen_1/Lista.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/Lista.cpp.obj"
   "C:/Users/Jose/CLionProjects/Examen_1/Menu.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/Menu.cpp.obj"
   "C:/Users/Jose/CLionProjects/Examen_1/Nodo.cpp" "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug/CMakeFiles/Examen_1.dir/Nodo.cpp.obj"

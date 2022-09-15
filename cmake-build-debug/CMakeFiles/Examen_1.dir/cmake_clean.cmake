@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Examen_1.dir/Hanoi.cpp.obj"
   "CMakeFiles/Examen_1.dir/Lista.cpp.obj"
   "CMakeFiles/Examen_1.dir/Menu.cpp.obj"
   "CMakeFiles/Examen_1.dir/Nodo.cpp.obj"

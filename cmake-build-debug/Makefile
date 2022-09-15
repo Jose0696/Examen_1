@@ -128,6 +128,30 @@ Examen_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/build
 .PHONY : Examen_1/fast
 
+Hanoi.obj: Hanoi.cpp.obj
+.PHONY : Hanoi.obj
+
+# target to build an object file
+Hanoi.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Hanoi.cpp.obj
+.PHONY : Hanoi.cpp.obj
+
+Hanoi.i: Hanoi.cpp.i
+.PHONY : Hanoi.i
+
+# target to preprocess a source file
+Hanoi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Hanoi.cpp.i
+.PHONY : Hanoi.cpp.i
+
+Hanoi.s: Hanoi.cpp.s
+.PHONY : Hanoi.s
+
+# target to generate assembly for a file
+Hanoi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Examen_1.dir\build.make CMakeFiles/Examen_1.dir/Hanoi.cpp.s
+.PHONY : Hanoi.cpp.s
+
 Lista.obj: Lista.cpp.obj
 .PHONY : Lista.obj
 
@@ -257,6 +281,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Examen_1
+	@echo ... Hanoi.obj
+	@echo ... Hanoi.i
+	@echo ... Hanoi.s
 	@echo ... Lista.obj
 	@echo ... Lista.i
 	@echo ... Lista.s
