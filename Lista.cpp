@@ -44,7 +44,7 @@ string Lista<tipo>::toString() {
 
 template<class tipo>
 void Lista<tipo>::agregarInicio(tipo *p) {
-    Nodo<tipo> *nuevo = new Nodo<tipo>;
+    Nodo<tipo>* nuevo = new Nodo<tipo>;
     nuevo->setDatos(p);
     nuevo->setSiguiente(raiz->getSiguiente());
     raiz->setSiguiente(nuevo);

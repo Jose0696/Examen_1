@@ -15,16 +15,15 @@ private:
     int n;
     string name;
 public:
-    explicit PilaLista(string name= "");
+     PilaLista(string = "");
     ~PilaLista();
 
     int size();
-    bool empty();
+    bool empty() const;
     tipo *top() throw(StackEmpty);
     void push(tipo *e);
     void pop() throw(StackEmpty);
     void clean();
-
     string getName() const;
 };
 

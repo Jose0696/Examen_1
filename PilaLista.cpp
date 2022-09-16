@@ -15,7 +15,7 @@ int PilaLista<tipo>::size() {
 }
 
 template<class tipo>
-bool PilaLista<tipo>::empty() {
+bool PilaLista<tipo>::empty() const{
     return n==0;
 }
 
@@ -26,14 +26,14 @@ void PilaLista<tipo>::push(tipo *e) {
 }
 
 template<class tipo>
-tipo *PilaLista<tipo>::top() throw(class StackEmpty) {
+tipo *PilaLista<tipo>::top() throw(StackEmpty) {
     if(empty())
         throw StackEmpty("Top sobre un stack vacio");
     return S->inicio();
 }
 
 template<class tipo>
-void PilaLista<tipo>::pop() throw(class StackEmpty) {
+void PilaLista<tipo>::pop() throw(StackEmpty) {
     if(empty())
         throw StackEmpty("Top sobre un stack vacio");
     S->borrarInicio();
