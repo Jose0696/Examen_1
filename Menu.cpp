@@ -9,6 +9,7 @@ Menu::Menu() {
     torre1 = new PilaLista<Hanoi>("1");
     torre2 = new PilaLista<Hanoi>("2");
     torre3 = new PilaLista<Hanoi>("3");
+    
 }
 
 void Menu::imprimeMenu() {
