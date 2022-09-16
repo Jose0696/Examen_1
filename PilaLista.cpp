@@ -5,7 +5,7 @@
 #include "PilaLista.h"
 
 template<class tipo>
-PilaLista<tipo>::PilaLista():S(new Lista<tipo>), n(0) {
+PilaLista<tipo>::PilaLista(string nom):S(new Lista<tipo>),n(0),name(nom) {
 
 }
 
@@ -43,4 +43,16 @@ void PilaLista<tipo>::pop() throw(class StackEmpty) {
 template<class tipo>
 PilaLista<tipo>::~PilaLista() {
     delete S;
+}
+
+template<class tipo>
+const string &PilaLista<tipo>::getName() const {
+    return name;
+}
+
+template<class tipo>
+void PilaLista<tipo>::clean() {
+    while(!empty()){
+        pop();
+    }
 }

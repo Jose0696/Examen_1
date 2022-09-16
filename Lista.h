@@ -18,6 +18,7 @@ public:
     ~Lista();
     string toString();
     tipo *inicio();
+
     void borrarInicio();
     void agregarInicio(tipo*);
 

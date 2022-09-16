@@ -13,15 +13,19 @@ class PilaLista {
 private:
     Lista<tipo> *S;
     int n;
-
+    string name;
 public:
-    PilaLista();
+    explicit PilaLista(string name= "");
     ~PilaLista();
+
     int size();
     bool empty();
     tipo *top() throw(StackEmpty);
     void push(tipo *e);
     void pop() throw(StackEmpty);
+    void clean();
+
+    const string &getName() const;
 };
 
 #endif //EXAMEN_1_PILALISTA_H

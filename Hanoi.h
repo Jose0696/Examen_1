@@ -14,8 +14,7 @@ private:
 
 public:
     Hanoi(int disco = 0);
-    int getDisco() const;
-    void setDisco(int disco);
+    virtual ~Hanoi() = default;
 
     friend ostream &operator<<(ostream &os, const Hanoi &hanoi);
 };

@@ -4,8 +4,7 @@
 
 #ifndef EXAMEN_1_MENU_H
 #define EXAMEN_1_MENU_H
-#include "Hanoi.h"
-#include "PilaLista.cpp"
+#include "Game.cpp"
 
 class Menu {
 private:
@@ -15,6 +14,7 @@ public:
     void imprimeMenu();
     void mostrarMenu();
     void Juego(int);
+    void movimientosMinimos(int);
 };
 
 

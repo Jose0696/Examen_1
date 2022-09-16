@@ -3,6 +3,7 @@
 //
 
 #include "Menu.h"
+const int constrasenia = 123;
 
 Menu::Menu() {
 
@@ -13,45 +14,48 @@ void Menu::imprimeMenu() {
 }
 
 void Menu::mostrarMenu() {
-    int discos=1;
-    cout<<"Cuantos discos desea jugar? "<<endl;
-    cin>>discos;
+    int discos=0;
+    int opcion;
 
-    bool repetir=1;
     do {
-        system("cls");
-        int opcion;
+        //system("cls");
         cout << "--------------TORRES DE HANOI--------------\n";
         cout << "1) Ingresar al juego\n";
         cout << "2) Mostrar numeros minimos\n";
         cout << "3) Mostrar algoritmo paso a paso\n";
-        cout << "3) Salir\n";
+        cout << "4) Salir\n";
         cout << " Digite una opcion.....   ";
         cin >> opcion;
 
         switch (opcion) {
             case 1:
                 cout << "------Juego------" << endl;
+                cout<<"Cuantos discos desea jugar? "<<endl;
+                cin>>discos;
                 Juego(discos);
                 break;
             case 2:
                 cout << "------Numeros minimos------" << endl;
+                cout<<"Cuantos discos desea jugar? "<<endl;
+                cin>>discos;
+                movimientosMinimos(discos);
                 break;
             case 3:
                 cout << "------Algoritmo------" << endl;
                 break;
 
             case 4:
-                repetir=0;
+                cout << "\nMuchas Gracias :) " << endl;
                 break;
             default:
+                cout << "Error en la Opcion " << endl;
                 break;
         }
-    }while (repetir);
+    }while (opcion != 4);
 }
 
 void Menu::Juego(int discos) {
-    PilaLista<int> *pilaLista1 = new PilaLista<int>;
+/*    PilaLista<int> *pilaLista1 = new PilaLista<int>;
     PilaLista<int> *pilaLista2 = new PilaLista<int>;
     PilaLista<int> *pilaLista3 = new PilaLista<int>;
     for (int i = 1; i <= discos; i++) {
@@ -131,5 +135,9 @@ void Menu::Juego(int discos) {
             default:
                 break;
         }
-    }while (repetirint);
+    }while (repetirint);*/
+}
+
+void Menu::movimientosMinimos(int discos) {
+    cout<<"La cantidad minima de movimientos para ganar con "<< discos <<" discos es de "<< Game<Hanoi>::movimientosMinimos(discos) <<endl;
 }
