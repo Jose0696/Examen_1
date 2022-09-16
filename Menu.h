@@ -15,6 +15,7 @@ public:
     void mostrarMenu();
     void Juego(int);
     void movimientosMinimos(int);
+    void algoritmo(int);
 };
 
 

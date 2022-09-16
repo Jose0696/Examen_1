@@ -16,42 +16,63 @@ void Menu::imprimeMenu() {
 void Menu::mostrarMenu() {
     int discos=0;
     int opcion;
-
+    bool repetir;
     do {
-        //system("cls");
-        cout << "--------------TORRES DE HANOI--------------\n";
-        cout << "1) Ingresar al juego\n";
-        cout << "2) Mostrar numeros minimos\n";
-        cout << "3) Mostrar algoritmo paso a paso\n";
-        cout << "4) Salir\n";
-        cout << " Digite una opcion.....   ";
-        cin >> opcion;
+        try {
+            do {
+                //system("cls");
+                cout << "--------------TORRES DE HANOI--------------\n";
+                cout << "1) Ingresar al juego\n";
+                cout << "2) Mostrar numeros minimos\n";
+                cout << "3) Mostrar algoritmo paso a paso\n";
+                cout << "4) Salir\n";
+                cout << " Digite una opcion.....   ";
+                cin >> opcion;
+                repetir = false;
+                switch (opcion) {
+                    case 1:
+                        cout << "------Juego------" << endl;
+                        cout << "Cuantos discos desea jugar? " << endl;
+                        cin >> discos;
+                        Juego(discos);
+                        break;
+                    case 2:
+                        cout << "------Numeros minimos------" << endl;
+                        cout << "Cuantos discos desea jugar? " << endl;
+                        cin >> discos;
+                        movimientosMinimos(discos);
+                        break;
+                    case 3:
+                        int repetir;
+                        do {
+                            try {
+                                int clave;
+                                cout << "------Algoritmo------" << endl;
+                                cout << "Ingresa la clave: ";
+                                cin >> clave;
+                                repetir = false;
 
-        switch (opcion) {
-            case 1:
-                cout << "------Juego------" << endl;
-                cout<<"Cuantos discos desea jugar? "<<endl;
-                cin>>discos;
-                Juego(discos);
-                break;
-            case 2:
-                cout << "------Numeros minimos------" << endl;
-                cout<<"Cuantos discos desea jugar? "<<endl;
-                cin>>discos;
-                movimientosMinimos(discos);
-                break;
-            case 3:
-                cout << "------Algoritmo------" << endl;
-                break;
+                                algoritmo(clave);
+                            } catch (RuntimeException e) {
+                                cout << e.getMessage() << endl;
+                                repetir = true;
+                            }
+                        }while(repetir);
+                        break;
 
-            case 4:
-                cout << "\nMuchas Gracias :) " << endl;
-                break;
-            default:
-                cout << "Error en la Opcion " << endl;
-                break;
+                    case 4:
+                        cout << "\nMuchas Gracias :) " << endl;
+                        break;
+                    default:
+                        cout << "Error en la Opcion " << endl;
+                        break;
+                }
+            } while (opcion != 4);
+        } catch (RuntimeException e) {
+            cout << e.getMessage() << endl;
+            repetir = true;
         }
-    }while (opcion != 4);
+    } while (repetir);
 }
 
 void Menu::Juego(int discos) {
@@ -140,4 +161,17 @@ void Menu::Juego(int discos) {
 
 void Menu::movimientosMinimos(int discos) {
     cout<<"La cantidad minima de movimientos para ganar con "<< discos <<" discos es de "<< Game<Hanoi>::movimientosMinimos(discos) <<endl;
+}
+
+void Menu::algoritmo(int clave) {
+    try {
+        if (clave == constrasenia) {
+            cout << "contrasenia correcta " << endl;
+
+        } else {
+            cout << "contrasenia incorrecta " << endl;
+        }
+    }catch (RuntimeException e){
+        cout << e.getMessage() << endl;
+    }
 }
