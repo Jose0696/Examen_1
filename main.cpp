@@ -8,12 +8,6 @@ int main() {
     cin>>n;
     cout<<"La cantidad minima de movimientos para ganar con "<<n<<" discos es de "<< Game<Hanoi>::movimientosMinimos(n) <<endl;*/
 
-
-
-
-
-
-
 /*    PilaLista<Hanoi> *pilaLista1 = new PilaLista<Hanoi>;
     pilaLista1->push(new Hanoi(1));
     cout << pilaLista1->size() << endl;
