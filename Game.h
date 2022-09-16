@@ -15,6 +15,7 @@ public:
     static void saveNumbers(PilaLista<tipo>* ,int, int);
     static int calcularNumero(int);
     static void movimientos(PilaLista<tipo>*,PilaLista<tipo>*);
+    static bool gane(PilaLista<tipo> *torre1, PilaLista<tipo>* torre2,PilaLista<tipo>* torre3, int discos);
 };
 
 

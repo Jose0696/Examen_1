@@ -50,4 +50,13 @@ template<class tipo>
 void Game<tipo>::movimientos(PilaLista<tipo> *salida, PilaLista<tipo>* entrada) {
     entrada->push(salida->top());
     salida->pop();
+
+}
+
+template<class tipo>
+bool Game<tipo>::gane(PilaLista<tipo> *torre1, PilaLista<tipo>* torre2,PilaLista<tipo>* torre3, int discos) {
+if(torre1->empty() && torre2->empty()){
+    return true;
+    }
+
 }

@@ -65,7 +65,7 @@ void Menu::mostrarMenu() {
 }
 
 void Menu::Juego(int discos) {
-    int opcion2=0,cant;
+    int opcion2=0,cant=0;
     Game<Hanoi>::saveNumbers(torre1, discos, 0);
     do {
         cout << "Movimientos minimos: " << Game<Hanoi>::movimientosMinimos(discos) << endl;
@@ -87,18 +87,23 @@ void Menu::Juego(int discos) {
                 cant++;
                 break;
             case 2:
+                Game<Hanoi>::movimientos(torre1,torre3);
                 cant++;
                 break;
             case 3:
+                Game<Hanoi>::movimientos(torre2,torre1);
                 cant++;
                 break;
             case 4:
+                Game<Hanoi>::movimientos(torre2,torre3);
                 cant++;
                 break;
             case 5:
+                Game<Hanoi>::movimientos(torre3,torre1);
                 cant++;
                 break;
             case 6:
+                Game<Hanoi>::movimientos(torre3,torre2);
                 cant++;
                 break;
             case 7:
@@ -116,6 +121,7 @@ void Menu::Juego(int discos) {
                 break;
         }
     } while (opcion2 != 8);
+    Game<Hanoi>::gane(torre1,torre2,torre3,discos);
     cant = 0;
 }
 
