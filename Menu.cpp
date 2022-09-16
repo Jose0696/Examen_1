@@ -3,15 +3,16 @@
 //
 
 #include "Menu.h"
-const int constrasenia = 123;
 
 Menu::Menu() {
+    usuario = new Usuario();
     torre1 = new PilaLista<Hanoi>("1");
     torre2 = new PilaLista<Hanoi>("2");
     torre3 = new PilaLista<Hanoi>("3");
 }
 
 void Menu::imprimeMenu() {
+    crearUsuario();
     mostrarMenu();
 }
 
@@ -22,8 +23,8 @@ void Menu::mostrarMenu() {
     do {
         try {
             do {
-                //system("cls");
                 cout << "--------------TORRES DE HANOI--------------\n";
+                cout << "Bienvenido :  " << usuario->getNombre() << "\n";
                 cout << "1) Ingresar al juego\n";
                 cout << "2) Mostrar numeros minimos\n";
                 cout << "3) Mostrar algoritmo paso a paso\n";
@@ -134,7 +135,7 @@ void Menu::algoritmo() {
     int clave,valor;
     cout << "Ingrese la clave para mostrar el algoritmo: ";
     cin >> clave;
-    if (clave == constrasenia) {
+    if (usuario->getClave() == constrasenia) {
         cout << "Clave correcta" << endl;
         cout << "Ingrese la cantidad de discos: ";
         cin >> valor;
@@ -143,4 +144,14 @@ void Menu::algoritmo() {
         cout << "Movimientos: \n" << s.str() << endl;
     } else
         cout << "Clave incorrecta" << endl;
+}
+
+void Menu::crearUsuario() {
+    string nombre;
+
+    cout << "Nombre de Usuario: ";
+    cin >> nombre;
+
+    usuario->setNombre(nombre);
+    cout << "\nLa clave ya esta solicitada por defecto (123)" << endl;
 }
