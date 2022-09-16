@@ -46,7 +46,7 @@ PilaLista<tipo>::~PilaLista() {
 }
 
 template<class tipo>
-const string PilaLista<tipo>::getName() const {
+string PilaLista<tipo>::getName() const {
     return name;
 }
 

@@ -43,21 +43,8 @@ void Menu::mostrarMenu() {
                         movimientosMinimos(discos);
                         break;
                     case 3:
-                        int repetir;
-                        do {
-                            try {
-                                int clave;
-                                cout << "------Algoritmo------" << endl;
-                                cout << "Ingresa la clave: ";
-                                cin >> clave;
-                                repetir = false;
-
-                                algoritmo(clave);
-                            } catch (RuntimeException e) {
-                                cout << e.getMessage() << endl;
-                                repetir = true;
-                            }
-                        }while(repetir);
+                        cout << "------Algoritmo------" << endl;
+                        algoritmo();
                         break;
 
                     case 4:
@@ -163,20 +150,18 @@ void Menu::movimientosMinimos(int discos) {
     cout<<"La cantidad minima de movimientos para ganar con "<< discos <<" discos es de "<< Game<Hanoi>::movimientosMinimos(discos) <<endl;
 }
 
-void Menu::algoritmo(int clave) {
-    try {
-        stringstream output;
-        int valor;
-        if (clave == constrasenia) {
-            cout << "contrasenia correcta " << endl;
-            cout << "Ingrese la cantidad de discos: ";
-            cin >> valor;
-            Game<Hanoi>::saveNumbers(torre1,valor,0);
-            Game<Hanoi>::jugada(valor,torre1,torre2,torre3,output);
-        } else {
-            cout << "contrasenia incorrecta " << endl;
-        }
-    }catch (RuntimeException e){
-        cout << e.getMessage() << endl;
-    }
+void Menu::algoritmo() {
+    stringstream s;
+    int clave,valor;
+    cout << "Ingrese la clave para mostrar el algoritmo: ";
+    cin >> clave;
+    if (clave == constrasenia) {
+        cout << "Clave correcta" << endl;
+        cout << "Ingrese la cantidad de discos: ";
+        cin >> valor;
+        Game<Hanoi>::saveNumbers(torre1, valor, 0);
+        Game<Hanoi>::jugada(valor, torre1, torre2, torre3, s);
+        cout << "Movimientos: \n" << s.str() << endl;
+    } else
+        cout << "Clave incorrecta" << endl;
 }

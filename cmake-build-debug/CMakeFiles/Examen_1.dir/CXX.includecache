@@ -17,8 +17,6 @@ PilaLista.cpp
 C:/Users/Jose/CLionProjects/Examen_1/PilaLista.cpp
 
 C:/Users/Jose/CLionProjects/Examen_1/Hanoi.h
-ostream
--
 Utils.h
 C:/Users/Jose/CLionProjects/Examen_1/Utils.h
 
@@ -57,13 +55,17 @@ Lista.cpp
 C:/Users/Jose/CLionProjects/Examen_1/Lista.cpp
 
 C:/Users/Jose/CLionProjects/Examen_1/RuntimeException.h
-iostream
--
+Utils.h
+C:/Users/Jose/CLionProjects/Examen_1/Utils.h
 
 C:/Users/Jose/CLionProjects/Examen_1/Utils.h
 iostream
 -
 sstream
+-
+ostream
+-
+math.h
 -
 
 C:/Users/Jose/CLionProjects/Examen_1/main.cpp

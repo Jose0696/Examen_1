@@ -25,7 +25,7 @@ public:
     void pop() throw(StackEmpty);
     void clean();
 
-    const string getName() const;
+    string getName() const;
 };
 
 #endif //EXAMEN_1_PILALISTA_H
