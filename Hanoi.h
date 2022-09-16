@@ -5,7 +5,6 @@
 #ifndef EXAMEN_1_HANOI_H
 #define EXAMEN_1_HANOI_H
 
-#include <ostream>
 #include "Utils.h"
 
 class Hanoi {

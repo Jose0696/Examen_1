@@ -165,9 +165,14 @@ void Menu::movimientosMinimos(int discos) {
 
 void Menu::algoritmo(int clave) {
     try {
+        stringstream output;
+        int valor;
         if (clave == constrasenia) {
             cout << "contrasenia correcta " << endl;
-
+            cout << "Ingrese la cantidad de discos: ";
+            cin >> valor;
+            Game<Hanoi>::saveNumbers(torre1,valor,0);
+            Game<Hanoi>::jugada(valor,torre1,torre2,torre3,output);
         } else {
             cout << "contrasenia incorrecta " << endl;
         }

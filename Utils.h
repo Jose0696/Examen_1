@@ -6,6 +6,8 @@
 #define EXAMEN_1_UTILS_H
 #include <iostream>
 #include <sstream>
+#include <ostream>
+#include <math.h>
 
 using namespace std;
 #endif //EXAMEN_1_UTILS_H

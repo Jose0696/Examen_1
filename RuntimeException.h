@@ -5,9 +5,7 @@
 #ifndef EXAMEN_1_RUNTIMEEXCEPTION_H
 #define EXAMEN_1_RUNTIMEEXCEPTION_H
 
-#include <iostream>
-
-using namespace std;
+#include "Utils.h"
 
 class RuntimeException {
 private:

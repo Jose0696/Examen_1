@@ -8,7 +8,9 @@
 
 class Menu {
 private:
-
+    PilaLista<Hanoi>* torre1;
+    PilaLista<Hanoi>* torre2;
+    PilaLista<Hanoi>* torre3;
 public:
     Menu();
     void imprimeMenu();
