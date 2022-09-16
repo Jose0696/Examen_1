@@ -14,6 +14,7 @@ public:
     static void jugada(int,PilaLista<tipo>*,PilaLista<tipo>*,PilaLista<tipo>*,stringstream&);
     static void saveNumbers(PilaLista<tipo>* ,int, int);
     static int calcularNumero(int);
+    static void movimientos(PilaLista<tipo>*,PilaLista<tipo>*);
 };
 
 

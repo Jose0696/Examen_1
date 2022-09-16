@@ -6,6 +6,7 @@
 			[
 				{
 					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -48,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Jose/CLionProjects/Examen_1/cmake-build-debug",
-		"source" : "C:/Users/Jose/CLionProjects/Examen_1"
+		"build" : "C:/Users/mmelr/CLionProjects/Examen_1/cmake-build-debug",
+		"source" : "C:/Users/mmelr/CLionProjects/Examen_1"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 2
+		"minor" : 3
 	}
 }

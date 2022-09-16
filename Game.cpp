@@ -45,3 +45,9 @@ template<class tipo>
 int Game<tipo>::calcularNumero(int h) {
     return int ((h+4)*pow(h+9,h+1));
 }
+
+template<class tipo>
+void Game<tipo>::movimientos(PilaLista<tipo> *salida, PilaLista<tipo>* entrada) {
+    entrada->push(salida->top());
+    salida->pop();
+}

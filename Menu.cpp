@@ -65,87 +65,58 @@ void Menu::mostrarMenu() {
 }
 
 void Menu::Juego(int discos) {
-/*    PilaLista<int> *pilaLista1 = new PilaLista<int>;
-    PilaLista<int> *pilaLista2 = new PilaLista<int>;
-    PilaLista<int> *pilaLista3 = new PilaLista<int>;
-    for (int i = 1; i <= discos; i++) {
-        pilaLista1->push(new int(i));
-    }
-
-    bool repetirint = 1;
+    int opcion2=0,cant;
+    Game<Hanoi>::saveNumbers(torre1, discos, 0);
     do {
-
-        cout << "Torre 1: "<< pilaLista1->size()<<endl;
-        cout << "Torre 2: "<< pilaLista3->size()<<endl;
-        cout << "Torre 3: "<< pilaLista3->size()<<endl;
-
-        int opcion;
-        cout << "--------------TORRES DE HANOI--------------\n";
-        cout << "1) De la pila 1 a la pila 2\n";
-        cout << "2) De la pila 1 a la pila 3\n";
-        cout << "3) De la pila 2 a la pila 1\n";
-        cout << "4) De la pila 2 a la pila 3\n";
-        cout << "5) De la pila 3 a la pila 1\n";
-        cout << "6) De la pila 3 a la pila 2\n";
-        cout << "7) Reiniciar el Juego\n";
-        cout << " Digite una opcion.....   ";
-        cin >> opcion;
-
-        switch (opcion) {
+        cout << "Movimientos minimos: " << Game<Hanoi>::movimientosMinimos(discos) << endl;
+        cout << "Movimientos realizados: " << cant << endl;
+        cout << "Lista de movimientos: \n";
+        cout << "1. De la pila 1 a la pila 2" << endl;
+        cout << "2. De la pila 1 a la pila 3" << endl;
+        cout << "3. De la pila 2 a la pila 1" << endl;
+        cout << "4. De la pila 2 a la pila 3" << endl;
+        cout << "5. De la pila 3 a la pila 1" << endl;
+        cout << "6. De la pila 3 a la pila 2" << endl;
+        cout << "7. Reiniciar el juego" << endl;
+        cout << "8. Salir" << endl;
+        cout << "Elija una opcion: ";
+        cin >> opcion2;
+        switch (opcion2) {
             case 1:
-                cout << "De la pila 1 a la pila 2" << endl;
-                if(pilaLista1->empty()!=true) {
-
-                    pilaLista1->pop();
-                    pilaLista2->push(new int(discos));
-                    cout << pilaLista1->size() << endl;
-                    cout << pilaLista2->size() << endl;
-                }else cout<<"No se puede realizar la accion"<<endl;
+                Game<Hanoi>::movimientos(torre1,torre2);
+                cant++;
                 break;
             case 2:
-                cout << "De la pila 1 a la pila 3" << endl;
-                pilaLista1->pop();
-                pilaLista3->push(new int(discos));
-                cout << pilaLista1->size() << endl;
-                cout << pilaLista3->size() << endl;
+                cant++;
                 break;
             case 3:
-                cout << "De la pila 2 a la pila 1" << endl;
-                pilaLista2->pop();
-                pilaLista1->push(new int(discos));
-                cout << pilaLista2->size() << endl;
-                cout << pilaLista1->size() << endl;
+                cant++;
                 break;
             case 4:
-                cout << "De la pila 2 a la pila 3" << endl;
-
-                pilaLista2->pop();
-                pilaLista3->push(new int(discos));
-                cout << pilaLista2->size() << endl;
-                cout << pilaLista3->size() << endl;
+                cant++;
                 break;
             case 5:
-                cout << "De la pila 3 a la pila 1" << endl;
-                pilaLista3->pop();
-                pilaLista1->push(new int(discos));
-                cout << pilaLista3->size() << endl;
-                cout << pilaLista1->size() << endl;
+                cant++;
                 break;
             case 6:
-                cout << "De la pila 3 a la pila 2" << endl;
-                pilaLista3->pop();
-                pilaLista2->push(new int(discos));
-                cout << pilaLista3->size() << endl;
-                cout << pilaLista2->size() << endl;
+                cant++;
                 break;
             case 7:
-                cout<<"Reiniciando el Juego"<<endl;
-                Juego(discos);
+                torre1->clean();
+                torre2->clean();
+                torre3->clean();
+                Game<Hanoi>::saveNumbers(torre1,discos,0);
+                cant = 0;
+                break;
+            case 8:
+                cout << "Salir al menu principal" << endl;
                 break;
             default:
+                cout << "Esta opcion no esta disponible" << endl;
                 break;
         }
-    }while (repetirint); // Metodo juego */
+    } while (opcion2 != 8);
+    cant = 0;
 }
 
 void Menu::movimientosMinimos(int discos) {
